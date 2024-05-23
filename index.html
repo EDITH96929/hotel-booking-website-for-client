@@ -1,0 +1,344 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/remixicon@3.5.0/fonts/remixicon.css"
+      rel="stylesheet"
+    />
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+    <link rel="stylesheet" href="./css styling/style.css" />
+    <link rel="icon" href="./assets/favicon.png" />
+    <script src="https://unpkg.com/scrollreveal"></script>
+    <title>rg homes</title>
+  </head>
+  <body>
+    <nav>
+      <div class="nav__bar">
+        <div class="nav__header">
+          <div class="logo nav__logo">
+            <div>R</div>
+            <span>RG<br />HOMES</span>
+          </div>
+          <div class="nav__menu__btn" id="menu-btn">
+            <i class="ri-menu-line"></i>
+          </div>
+        </div>
+        <ul class="nav__links" id="nav-links">
+          <li><a href="#home">Home</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#room">Room</a></li>
+          <li><a href="#feature">Feature</a></li>
+          <li><a href="./html section/contact_us.html">Contact us</a></li>
+          <li><a href="./html section/login.html">sign up</a></li>
+        </ul>
+      </div>
+    </nav>
+
+    <header class="header" id="home">
+      <div class="section__container header__container">
+        <p class="section__subheader">ABOUT US</p>
+        <h1>The Perfect<br />Base For You</h1>
+        <button class="btn">Take A Tour</button>
+      </div>
+    </header>
+
+    <section class="booking">
+      <div class="section__container booking__container">
+        <form action="/">
+          <div class="input__group">
+            <label for="arrival">Arrival Date</label>
+            <input type="date" placeholder="Your Arrival Date" />
+          </div>
+          <div class="input__group">
+            <label for="departure">Departure Date</label>
+            <input type="date" placeholder="Your Departure Date" />
+          </div>
+          <div class="input__group">
+            <label for="guests">Guests</label>
+            <input type="number" placeholder="No Of Guests" />
+          </div>
+          <button class="btn">Check Availability</button>
+        </form>
+      </div>
+    </section>
+
+    <section class="about" id="about">
+      <div class="section__container about__container">
+        <div class="about__grid">
+          <div class="about__image">
+            <img src="./assets/image folder/about-1.jpg" alt="about" />
+          </div>
+          <div class="about__card">
+            <span><i class="fa-solid fa-people-group"></i></span>
+            <h4>Strong Team</h4>
+            <p>
+              Unlocking Hospitality Excellence And Ensures Your Perfect Stay
+            </p>
+          </div>
+          <div class="about__image">
+            <img src="assets/about2.jpg" alt="about" />
+          </div>
+          <div class="about__card">
+            <span><i class="ri-calendar-check-line"></i></span>
+            <h4>Luxury Room</h4>
+            <p>Experience Unrivaled Luxury at Our Exquisite Luxury Rooms</p>
+          </div>
+        </div>
+        <div class="about__content">
+          <p class="section__subheader">ABOUT US</p>
+          <h2 class="section__header">Discover Our Underground</h2>
+          <p class="section__description">
+           Lorem ipsum dolor sit amet consectetur adipisicing elit. Soluta,
+           soluta aliquam, autem officiis impedit similique fugit eos ipsum.
+           qui ad accusamus in sed hic, ullam veritatis a ipsa, libero quibusdam 
+           
+          </p>
+          <a href="./html section/booking_from.html"><button class="btn">read more</button></a>
+        </div>
+      </div>
+    </section>
+
+    <section class="room__container" id="room">
+      <p class="section__subheader">ROOMS</p>
+      <h2 class="section__header">Hand Picked Rooms</h2>
+      <div class="room__grid">
+        <div class="room__card">
+          <img src="../assets/image_folder/room1.webp" alt="room" />
+          <div class="room__card__details">
+            <div>
+              <h4>Deluxe Suite</h4>
+              <p>Well-appointed rooms designed for guests who desire a more.</p>
+            </div>
+            <h3>$399<span>/night</span></h3>
+          </div>
+        </div>
+        <div class="room__card">
+          <img src="../assets/image_folder/0df9fd02-e46e-4519-832c-65d949e82da8.webp" alt="room" />
+          <div class="room__card__details">
+            <div>
+              <h4>Family Suite</h4>
+              <p>Consist of multiple rooms and a common living area.</p>
+            </div>
+            <h3>$599<span>/night</span></h3>
+          </div>
+        </div>
+        <div class="room__card">
+          <img src="../assets/image_folder/room3.webp" alt="room" />
+          <div class="room__card__details">
+            <div>
+              <h4>Luxury Penthouse</h4>
+              <p>
+                Top-tier accommodations usually on the highest floors of a
+                hotel.
+              </p>
+            </div>
+            <h3>$799<span>/night</span></h3>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="intro">
+      <div class="section__container intro__container">
+        <div class="intro__cotent">
+          <p class="section__subheader">INTRO VIDEO</p>
+          <h2 class="section__header">Meet With Our Luxury Place</h2>
+          <p class="section__description">
+            Whether you're seeking a cozy and exclusive hideaway or an immersive
+            journey beneath the surface, Hotel Miranda promises to be an
+            unforgettable stay, where the depths of comfort and excitement await
+            your arrival.
+          </p>
+          <button class="btn">Book Now</button>
+        </div>
+        <div class="intro__video">
+          <video src="../assets/image_folder/luxury.mp4" autoplay muted loop></video>
+        </div>
+      </div>
+    </section>
+
+    <section class="section__container feature__container" id="feature">
+      <p class="section__subheader">FACILITIES</p>
+      <h2 class="section__header">Core Features</h2>
+      <div class="feature__grid">
+        <div class="feature__card">
+          <span><i class="ri-thumb-up-line"></i></span>
+          <h4>Have High Rating</h4>
+          <p>
+            We take pride in curating a selection of hotels that consistently
+            receive high ratings and positive reviews.
+          </p>
+        </div>
+        <div class="feature__card">
+          <span><i class="fa-solid fa-tv"></i></span>
+          <h4>LED TV</h4>
+          <p>
+           Lorem ipsum dolor sit amet consectetur adipisicing elit. Sunt, corrupti.
+          </p>
+        </div>
+        <div class="feature__card">
+          <span><i class="ri-roadster-fill"></i></i></span>
+          <h4>parking slot</h4>
+          <p>
+            At our hotel booking website, we take pride in offering
+            accommodations in the most prime and sought-after locations.
+          </p>
+        </div>
+        <div class="feature__card">
+          <span><i class="ri-close-circle-line"></i></span>
+          <h4>Free Cancellation</h4>
+          <p>
+            We understand that travel plans can change unexpectedly, which is
+            why we offer the flexibility of free cancellation.
+          </p>
+        </div>
+        <div class="feature__card">
+          <span><i class="fa-solid fa-house-signal"></i></span>
+          <h4>free wifi</h4>
+          <p>
+            Our hotel booking website offers a range of convenient payment
+            options to suit your preferences.
+          </p>
+        </div>
+        <div class="feature__card">
+          <span><i class="fa-solid fa-person-swimming"></i></span>
+          <h4>swiming pool</h4>
+          <p>
+           there is a swiming pool inside our society , but for bathing for 
+           1 hour one has to pay hundred rupees per person
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <section class="menu" id="menu">
+      <div class="section__container menu__container">
+        <ul class="menu__banner">
+          <li>
+            <span><i class="fa-regular fa-face-smile"></i></span>
+            <h4>3k+</h4>
+            <p>happy Customers</p>
+          </li>
+          <li>
+            <span><i class="ri-user-line"></i></span>
+            <h4>1k</h4>
+            <p>Active Around World</p>
+          </li>
+          <li>
+            <span><i class="fa-brands fa-airbnb"></i></span>
+            <h4>300+</h4>
+            <p>reviews on airbnb</p>
+          </li>
+          <li>
+            <span><i class="ri-lightbulb-flash-line"></i></span>
+            <h4>superhost</h4>
+            <p>superhost badge on airbnb</p>
+          </li>
+        </ul>
+      </div>
+    </section>
+
+    <section class="client">
+      <div class="section__container client__container">
+        <h2 class="section__header">What our guests says</h2>
+        <div class="client__grid">
+          <div class="client__card">
+            <img src="../assets/svg folder/user1.svg" alt="client" />
+            <p>
+              <i class="ri-chat-quote-fill"></i>It was a great great pleasure to stay at R G Homes.. The host Rahul ji was so helpful, quickly answering every call.. I just informed we will reach puri early morning and he called us at 4 o clock to check with us whether we reached. Nd then further helped in smooth check in.
+              The twin home was really beautiful nd exactly as shown in the pictures...
+            </p>
+          </div>
+          <div class="client__card">
+            <img src="../assets/svg folder/user2.svg" alt="client" />
+            <p>
+              It was a nice place in a society . Host Rahul ji is very responsive to each and every queries. There was an issue with the clogged pipe which was solved as immediately as possible. The cleanliness was really good and the rooms have a nice positive vibe. It is really a nice option for having a homelike atmosphere in a tourist place.
+             
+            </p>
+          </div>
+          <div class="client__card">
+            <img src="../assets/svg folder/user3.svg" alt="client" />
+            <p>
+              Our recent stay at RG Homes, managed by Rahul Ji, was an exceptionally comfortable and convenient experience. The property, situated just 750 metres from the sea beach and 2.5 km from Swargadwar, offers a serene escape with a homely atmosphere, ideal for anyone seeking a peaceful retreat. Despite its proximity to the beach
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <footer class="footer">
+      <div class="section__container footer__container">
+        <div class="footer__col">
+          <div class="logo footer__logo">
+            <div>S</div>
+            <span>WEBSITE MANAGED<br />BY SUNIL</span>
+          </div>
+          <p class="section__description">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Nihil,
+            laudantium unde. Doloremque eaque debitis laborum labore voluptates
+            iste molestiae consectetur.
+          </p>
+          <ul class="footer__socials">
+            <li>
+              <a href="#"><i class="ri-youtube-fill"></i></a>
+            </li>
+            <li>
+              <a href="#"><i class="ri-instagram-line"></i></a>
+            </li>
+            <li>
+              <a href="#"><i class="ri-facebook-fill"></i></a>
+            </li>
+            <li>
+              <a href="#"><i class="ri-linkedin-fill"></i></a>
+            </li>
+          </ul>
+        </div>
+        <div class="footer__col">
+          <h4>Services</h4>
+          <div class="footer__links">
+            <li><a href="#">Online Booking</a></li>
+            <li><a href="#">Room Services</a></li>
+            <li><a href="#">cab Service</a></li>
+            <li><a href="#">Special Offers</a></li>
+            <li><a href="#">tour guide</a></li>
+            <li><a href="#">Customer Support</a></li>
+          </div>
+        </div>
+        <div class="footer__col">
+          <h4>Contact Us</h4>
+          <div class="footer__links">
+            <li>
+              <span><i class="ri-phone-fill"></i></span>
+              <div>
+                <h5>Phone Number</h5>
+                <p>+91 96929***85</p>
+              </div>
+            </li>
+            <li>
+              <span><i class="ri-record-mail-line"></i></span>
+              <div>
+                <h5>Email</h5>
+                <p>info@sunilswain.com</p>
+              </div>
+            </li>
+            <li>
+              <span><i class="ri-map-pin-2-fill"></i></span>
+              <div>
+                <a href="../html section/location.html"><h5>Location</h5></a>
+                <p>Krishna sea sight,puri</p>
+              </div>
+            </li>
+          </div>
+        </div>
+      </div>
+      <div class="footer__bar">
+        Copyright © 2024 webdesign by sunil. All rights reserved.
+      </div>
+    </footer>
+
+    <script src="../javascript section/script.js"></script>
+  </body>
+</html>

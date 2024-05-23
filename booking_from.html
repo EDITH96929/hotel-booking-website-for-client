@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Hotel Booking</title>
+
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+        background-color: #fff5ea;
+      }
+      .booking_form {
+        display: flex;
+      }
+
+      .booking-container {
+        width: 700px;
+        height: 550px;
+        padding: 20px;
+        margin-right: 70px;
+      }
+
+      h1 {
+        text-align: center;
+        font-weight: 900;
+        color: rgb(36, 36, 36);
+      }
+
+      .form-group {
+        margin-bottom: 15px;
+      }
+
+      label {
+        display: block;
+        margin-bottom: 5px;
+      }
+
+      input[type="text"],
+      input[type="email"],
+      input[type="date"],
+      input[type="number"],
+      button {
+        width: 100%;
+        padding: 10px;
+        font-size: 16px;
+        border: 1px solid #ccc;
+        border-radius: 5px;
+        box-sizing: border-box;
+      }
+
+      button {
+        background-color: #007bff;
+        color: #fff;
+        cursor: pointer;
+      }
+
+      button:hover {
+        background-color: #0056b3;
+      }
+      .booking_image {
+        height: 77%;
+      }
+    </style>
+  </head>
+  <body>    
+    <div class="booking_form">
+      <div>
+        <img
+          class="booking_image"
+          src="../assets/svg folder/booking from image/Woman-booking-appointment.png"
+          alt=""
+        />
+      </div>
+      <div class="booking-container">
+        <form id="booking-form">
+          <div class="form-group">
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required />
+          </div>
+          <div class="form-group">
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required />
+          </div>
+          <div class="form-group">
+            <label for="checkin">Check-in Date:</label>
+            <input type="date" id="checkin" name="checkin" required />
+          </div>
+          <div class="form-group">
+            <label for="checkout">Check-out Date:</label>
+            <input type="date" id="checkout" name="checkout" required />
+          </div>
+          <div class="form-group">
+            <label for="rooms">Number of Rooms:</label>
+            <input type="number" id="rooms" name="rooms" min="1" required />
+          </div>
+          <button type="submit" >Book Now</button>
+        </form>
+      </div>
+    </div>
+
+    <script>
+      document
+        .getElementById("booking-form")
+        .addEventListener("submit", function (event) {
+          event.preventDefault();
+          const formData = new FormData(this);
+          const bookingDetails = {};
+          formData.forEach((value, key) => {
+            bookingDetails[key] = value;
+          });
+          console.log(bookingDetails); // Replace with your booking submission logic
+        });
+    </script>
+  </body>
+</html>
